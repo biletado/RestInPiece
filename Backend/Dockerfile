@@ -8,7 +8,7 @@ WORKDIR /src
 COPY . .
 
 # restore entire solution
-RUN dotnet restore
+RUN dotnet restore -v diag
 
 # build
 RUN dotnet build Backend/WebEngineering_2/WebEngineering_2.csproj -c Release --no-restore
