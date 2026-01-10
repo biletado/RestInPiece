@@ -1,0 +1,153 @@
+﻿# ======================================
+# .NET / Build Outputs
+# ======================================
+bin/
+obj/
+out/
+artifacts/
+[Bb]in/
+[Oo]bj/
+
+# MSBuild logs
+*.binlog
+
+# ======================================
+# Test Results / Coverage (xUnit, MSTest, NUnit, Coverlet)
+# ======================================
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+nunit-*.xml
+TestResult.xml
+*.VisualState.xml
+BenchmarkDotNet.Artifacts/
+
+# ======================================
+# IDEs (Visual Studio, Rider, VS Code)
+# ======================================
+.vs/
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.history/
+.localhistory/
+.vshistory/
+
+*.suo
+*.user
+*.rsuser
+*.userosscache
+*.sln.docstates
+*.code-workspace
+*.sln.iml
+
+# ReSharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# CodeRush
+.cr/personal
+
+# ======================================
+# Logs / Temp
+# ======================================
+*.log
+[Ll]og/
+[Ll]ogs/
+*.tmp
+*.tmp_proj
+*.pidb
+*.svclog
+*~
+*~.*
+~$*
+
+# ======================================
+# NuGet
+# ======================================
+*.nupkg
+*.snupkg
+.nuget/
+*.nuget.props
+*.nuget.targets
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# ======================================
+# Publish / Azure
+# ======================================
+*.pubxml
+*.publishproj
+*.publish.xml
+*.azurePubxml
+PublishScripts/
+
+# ======================================
+# ASP.NET / Scaffolding
+# ======================================
+ScaffoldingReadMe.txt
+
+# ======================================
+# OS
+# ======================================
+.DS_Store
+Thumbs.db
+*.[Cc]ache
+!?*.[Cc]ache/
+
+# ======================================
+# Docker
+# ======================================
+docker-compose.override.yml
+
+# ======================================
+# Environment files
+# ======================================
+.env
+.env.*
+
+# ======================================
+# Misc Visual Studio Artifacts
+# ======================================
+Generated Files/
+Generated\ Files/
+MigrationBackup/
+ClientBin/
+AppPackages/
+BundleArtifacts/
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+
+# ======================================
+# Backups / Upgrade
+# ======================================
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# ======================================
+# Others
+# ======================================
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+Generated_Code/
+FakesAssemblies/
+_TeamCity*
+.axoCover/*
+!.axoCover/settings.json

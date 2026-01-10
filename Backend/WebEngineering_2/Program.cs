@@ -2,17 +2,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebEngineering_2;
 
-public class Program
+public partial class Program   // <-- partial!
 {
     public static void Main(string[] args)
     {
-        //testcomment
         var builder = WebApplication.CreateBuilder(args);
         
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<ApplicationDbContext>(
-            options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
-            );
+
+        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+        );
+
         builder.Services.AddOpenApi();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -22,8 +23,8 @@ public class Program
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi();
-            
         }
+
         app.UseSwagger();
         app.UseSwaggerUI();
         app.UseHttpsRedirection();
