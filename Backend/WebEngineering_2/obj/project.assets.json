@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Uni\\Klausur\\REST\\WebEngineering_2\\WebEngineering_2\\WebEngineering_2.csproj",
+      "projectUniqueName": "C:\\Uni\\Klausur\\Projekt_Web_Eng_2\\biletado-reservations-v2\\Backend\\WebEngineering_2\\WebEngineering_2.csproj",
       "projectName": "WebEngineering_2",
-      "projectPath": "C:\\Uni\\Klausur\\REST\\WebEngineering_2\\WebEngineering_2\\WebEngineering_2.csproj",
+      "projectPath": "C:\\Uni\\Klausur\\Projekt_Web_Eng_2\\biletado-reservations-v2\\Backend\\WebEngineering_2\\WebEngineering_2.csproj",
       "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-      "outputPath": "C:\\Uni\\Klausur\\REST\\WebEngineering_2\\WebEngineering_2\\obj\\",
+      "outputPath": "C:\\Uni\\Klausur\\Projekt_Web_Eng_2\\biletado-reservations-v2\\Backend\\WebEngineering_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marcm\\AppData\\Roaming\\NuGet\\NuGet.Config"

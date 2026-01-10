@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EpFUO2FLee4=",
+  "dgSpecHash": "u2N3JKWCpss=",
   "success": true,
-  "projectFilePath": "C:\\Uni\\Klausur\\REST\\WebEngineering_2\\WebEngineering_2\\WebEngineering_2.csproj",
+  "projectFilePath": "C:\\Uni\\Klausur\\Projekt_Web_Eng_2\\biletado-reservations-v2\\Backend\\WebEngineering_2\\WebEngineering_2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
     "C:\\Users\\marcm\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.1\\microsoft.entityframeworkcore.10.0.1.nupkg.sha512",
