@@ -1,0 +1,28 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webengineering-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webengineering-api
+  template:
+    metadata:
+      labels:
+        app: webengineering-api
+    spec:
+      containers:
+        - name: api
+          image: docker.io/herazael/web_eng_api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Development"
+
+
+            - name: ConnectionStrings__DefaultConnection
+              value: "Host=postgres;Port=5432;Database=reservations_v3;Username=postgres;Password=postgres"
