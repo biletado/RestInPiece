@@ -8,13 +8,12 @@ WORKDIR /src
 COPY . .
 
 # restore entire solution
-RUN dotnet restore -v diag
+RUN dotnet restore Backend/WebEngineering_2/WebEngineering_2.csproj
+RUN dotnet restore WebEngineering2.Tests/WebEngineering2.Tests/WebEngineering2.Tests.csproj
 
-# build
 RUN dotnet build Backend/WebEngineering_2/WebEngineering_2.csproj -c Release --no-restore
 RUN dotnet build WebEngineering2.Tests/WebEngineering2.Tests/WebEngineering2.Tests.csproj -c Release --no-restore
 
-# run tests (FAILS BUILD if tests fail)
 RUN dotnet test WebEngineering2.Tests/WebEngineering2.Tests/WebEngineering2.Tests.csproj -c Release --no-build
 
 # =========================
