@@ -2,6 +2,32 @@
 kind: Kustomization
 
 resources:
-  - deployment.yaml
-  - service.yaml
+  - https://gitlab.com/biletado/kustomize.git//overlays/kind
 
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: 1docker.io/herazael/web_eng_api:latest
+      - op: replace
+        path: /spec/template/spec/containers/0/ports/0/containerPort
+        value: 8080
+      - op: replace
+        path: /spec/template/spec/containers/0/imagePullPolicy
+        value: Never
+      - op: add
+        path: /spec/template/spec/containers/0/env/-
+        value:
+          name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+      - op: add
+        path: /spec/template/spec/containers/0/env/-
+        value:
+          name: ConnectionStrings__DefaultConnection
+          value: "Host=postgres;Port=5432;Database=reservations_v3;Username=postgres;Password=postgres"
+
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: reservations
